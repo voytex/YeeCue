@@ -8,4 +8,6 @@ and green LEDs. It would however require a lot of other components as 5V LEDs wo
 
 These smartbulbs are way cheaper than other brands (e.g. Phillips Hue or IKEA) and communicate over Wi-Fi, which is also handy because you don't need any ZigBee gateway. They also have a lot of trade-offs (tedious initial setup, not so strong light output...) but overall are absolutely awesome for this kind of project!
 
+The whole sstem is being used and tested with our stream setup
 
+<img src="https://user-images.githubusercontent.com/63453314/209685236-5d55c558-8f29-4c99-a1a0-12867db283f4.jpg"  width="500">
