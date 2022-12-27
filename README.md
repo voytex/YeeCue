@@ -11,3 +11,9 @@ These smartbulbs are way cheaper than other brands (e.g. Phillips Hue or IKEA) a
 The whole sstem is being used and tested with our stream setup
 
 <img src="https://user-images.githubusercontent.com/63453314/209685236-5d55c558-8f29-4c99-a1a0-12867db283f4.jpg"  width="500">
+
+## Requirements
+
+## Installation
+
+## Usage
