@@ -53,3 +53,8 @@ The first task is to <i>activate</i> the bulbs and connect them to a single netw
 2. Connect your smartphone to the same network you wish to connect the bulb into
 3. In Yeelight App, add a new bulb following the instructions
 4. Once the procedure is done, <b>be sure to turn on LAN control</b> (it should be on by default). This is absolutely crucial, it allows you to control the bulb locally, even without the LAN connected to the internet
+5. Now it is very handy for the bulb to have a static IP. In your AP settings (probably somewhere in DHCP tab) assign this bulb a static IP.
+
+Repeat for all the bulbs you wish to use. Regarding the IPs, assign them <b>sequentially</b>, the script won't work otherwise.  
+
+
