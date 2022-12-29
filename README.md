@@ -18,8 +18,8 @@ Firstly, we need <b>the bulbs</b>. Here in CZE, they are a bit harder to find, s
 
 | Bulb type | Tested and working |
 | --------- | :---: |
-| Yeelight 1SE | ✅ |
-| Yeelight W3 | ✅ |
+| Yeelight 1SE (color) | ✅ |
+| Yeelight W3 (color) | ✅ |
 | Yeelight M2 | ❌ |
 
 There might be other types which I haven't been able to test, still these are safe bets. Feel free to report other types.
