@@ -1,5 +1,4 @@
 import PyATEMMax
-# from matplotlib.pyplot import flag
 from yeelight import Bulb
 import time
 import threading
@@ -76,21 +75,24 @@ def setup() -> tuple:
     print(get_local_ip(), end="")
     ip_start = safe_input()
 
-    return n_bulbs, ip_start
+    print("\nEnter last nibble of the ATEM's IP:")
+    print(get_local_ip(), end="")
+    ip_atem = safe_input()
+    return n_bulbs, ip_start, ip_atem
 
 def main():
      # connecting to ATEM
-    switcher.connect("192.168.2.111") # TODO more elegant you cunt!
-    switcher.waitForConnection()
-    if ("-v" in sys.argv):
-        print(f"{STR_GREEN_CONSOLE} ATEM connected{STR_NORMAL_CONSOLE}")
-
     if len(sys.argv) >= 3:
         n_bulbs = int(sys.argv[1])
         ip_start = int(sys.argv[2])
-        GLOBAL_BRIGHTNESS = int(sys.argv[3])
+        ip_atem = int(sys.argv[3])
     else:
-        n_bulbs, ip_start = setup()
+        n_bulbs, ip_start, ip_atem = setup()
+    
+    switcher.connect(f"{get_local_ip()}{ip_atem}") 
+    switcher.waitForConnection()
+    if ("-v" in sys.argv):
+        print(f"{STR_GREEN_CONSOLE} ATEM connected{STR_NORMAL_CONSOLE}")
     
     global bulbs
     global threads
@@ -116,3 +118,4 @@ if __name__ == "__main__":
         sys.exit()
     except:
         print(f"{STR_YELLOW_CONSOLE}Error connecting to bulbs, terminating...")
+        sys.exit()
