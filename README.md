@@ -1,4 +1,4 @@
-# YeeCue
+# YeeCue | Budget Cue Lights for Blackmagic ATEM Switchers
 <i>Python script adapting Yeelight bulbs as cue lights for Blackmagic ATEM switchers</i>
 
 ## About
@@ -8,7 +8,7 @@ and green LEDs. It would however require a lot of other components as 5V LEDs wo
 
 These smartbulbs are way cheaper than other brands (e.g. Phillips Hue or IKEA) and communicate over Wi-Fi, which is also handy because you don't need any ZigBee gateway. They also have a lot of trade-offs (tedious initial setup, not so strong light output...) but overall are absolutely awesome for this kind of project!
 
-The whole sstem is being used and tested with our stream setup
+The whole system is being used and tested with our stream setup
 
 <img src="https://user-images.githubusercontent.com/63453314/209685236-5d55c558-8f29-4c99-a1a0-12867db283f4.jpg"  width="500">
 
@@ -55,6 +55,9 @@ The first task is to <i>activate</i> the bulbs and connect them to a single netw
 4. Once the procedure is done, <b>be sure to turn on LAN control</b> (it should be on by default). This is absolutely crucial, it allows you to control the bulb locally, even without the LAN connected to the internet
 5. Now it is very handy for the bulb to have a static IP. In your AP settings (probably somewhere in DHCP tab) assign this bulb a static IP.
 
-Repeat for all the bulbs you wish to use. Regarding the IPs, assign them <b>sequentially</b>, the script won't work otherwise.  
+Repeat for all the bulbs you wish to use. Regarding the IPs, assign them <b>sequentially</b>, the script won't work otherwise. 
+
+### 2. Run the script
+After you connect bulbs, ATEM and the PC/Mac into a single network, you can proceed and run the script.
 
 
