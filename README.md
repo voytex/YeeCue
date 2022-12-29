@@ -58,6 +58,14 @@ The first task is to <i>activate</i> the bulbs and connect them to a single netw
 Repeat for all the bulbs you wish to use. Regarding the IPs, assign them <b>sequentially</b>, the script won't work otherwise. 
 
 ### 2. Run the script
-After you connect bulbs, ATEM and the PC/Mac into a single network, you can proceed and run the script.
+After you connect bulbs, ATEM and the PC/Mac into a single network, you can proceed and run the script. In Terminal or Command Line , ``cd`` into the folder you downloaded the script. You can either run
+'''shell
+$ python3 main.py
+```
+and go through the <i>wizard</i> filling the number of bulbs being used and all the IPs, or run
+```shell
+$ python3 <n_bulbs> <ip_start> <ip_atem> (-v)
+```
+where ``n_bulbs`` sets the number of bulbs being used, ``ip_start`` is the last of nibble of first bulb's IP, ``ip_atem`` is the last nibble of the ATEM's IP address. Optional ``-v`` turns on verbose mode. 
 
 
