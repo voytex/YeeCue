@@ -34,7 +34,7 @@ ATEM Software Control firmware versions up to 7.5.0.
 It <b>might cease working</b> with Blackmagic ATEM firmware update and nobody might be able to patch it. But for now, it works.
 
 | ATEM type | Firmware Version | Tested and working |
-| --------- | ---------------- | ------------------ | 
+| --------- | :--------------: | :----------------: | 
 | Blackmagic ATEM Mini Pro | TBD | ✅ |
 | other ATEMs | ❓ | ❓ |
 
