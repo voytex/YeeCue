@@ -46,6 +46,10 @@ $ pip install PyATEMMax
 ```
 
 ## Usage
-The script has to be running on a PC/macOS within the same network all the bulbs and the ATEM are connected into. 
+The script has to be running on a PC/Mac within the same network all the bulbs and the ATEM are connected into. 
 ### 1. Bulb initialization
-The first task is to <i>activate</i> the bulbs. As far as I know, it <b>has to be done</b> via official Yeelight app. During the activation, the bulb has to send <i>some</i> data to the internet, therefore the LAN you are adding the bulb into, has to be able to connect to the internet. 
+The first task is to <i>activate</i> the bulbs and connect them to a single network. As far as I know, it <b>has to be done</b> via official Yeelight app. During the activation, the bulb has to send <i>some</i> data to the internet, therefore the LAN you are adding the bulb into, has to be connected to the internet. 
+1. On your smartphone, download official Yeelight App (not the Mi Home)
+2. Connect your smartphone to the same network you wish to connect the bulb into
+3. In Yeelight App, add a new bulb following the instructions
+4. Once the procedure is done, <b>be sure to turn on LAN control</b> (it should be on by default). This is absolutely crucial, it allows you to control the bulb locally, even without the LAN connected to the internet
