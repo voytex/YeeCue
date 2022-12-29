@@ -20,9 +20,14 @@ Firstly, we need <b>the bulbs</b>. Here in CZE, they are a bit harder to find, s
 | --------- | :---: |
 | Yeelight 1SE (color) | ✅ |
 | Yeelight W3 (color) | ✅ |
-| Yeelight M2 | ❌ |
+| Yeelight M2 | ❌ not working ❌ |
 
-There might be other types which I haven't been able to test, still these are safe bets. Feel free to report other types.
+There might be other types which I haven't been able to test, still W3 and 1SE are safe bets. Feel free to report other types.
+### Blackmagic ATEM
+As far as I know all Blackmagic ATEM switchers <b>should</b> be able to be compatible. Everything depends on Python library <a href="https://clvlabs.github.io/PyATEMMax/">PyATEMMax</a> (huge thanks to the authors, mainly SKAARHOJ).
+
+### Software
+
 
 ## Installation
 
