@@ -24,7 +24,20 @@ Firstly, we need <b>the bulbs</b>. Here in CZE, they are a bit harder to find, s
 
 There might be other types which I haven't been able to test, still W3 and 1SE are safe bets. Feel free to report other types.
 ### Blackmagic ATEM
-As far as I know all Blackmagic ATEM switchers <b>should</b> be able to be compatible. Everything depends on Python library <a href="https://clvlabs.github.io/PyATEMMax/">PyATEMMax</a> (huge thanks to the authors, mainly SKAARHOJ).
+As far as I know all Blackmagic ATEM switchers <b>should</b> be able to be compatible. Everything depends on Python library <a href="https://clvlabs.github.io/PyATEMMax/">PyATEMMax</a> (huge thanks to the authors, mainly SKAARHOJ). However, as stated in the docs:
+```markdown
+August 2018: The free open source SKAARHOJ provided Arduino Libraries will only work with 
+ATEM Software Control firmware versions up to 7.5.0.
+
+(SKAARHOJs commercial products will work with ATEM Software Control firmwares beyond 7.5.0)
+```
+It <b>might cease working</b> with Blackmagic ATEM firmware update and nobody might be able to patch it. But for now, it works.
+
+| ATEM type | Firmware Version | Tested and working |
+| --------- | ---------------- | ------------------ | 
+| Blackmagic ATEM Mini Pro | TBD | ✅ |
+| other ATEMs | ❓ | ❓ |
+
 
 ### Software
 
