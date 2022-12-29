@@ -72,5 +72,8 @@ Let's say, I have three bulbs, the first one's IP address is ``192.168.1.100``, 
 ```shell
 $ main.py 3 100 50 -v
 ```
+Input 1 of the ATEM switcher will be then assigned to the first bulb ``192.168.1.100``, input 2 to the bulb ``.101`` and input 3 to the bulb ``.102``. If the video input is set to <b>Preview</b>, the corresponding bulb turns green. If the input is set to <b>Program</b>, corresponding bulbs turns red. Otherwise the bulb is turned off. 
 
+## Plans for the future
+This project is very very much <b>work in progress</b>, I would like to develop a simple GUI for everyone to use. Of course feel free to fix my bugs or improve anything. This project is now <b>on hold</b>, since I have to finish my Master's project. 
 
