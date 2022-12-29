@@ -39,13 +39,13 @@ It <b>might cease working</b> with Blackmagic ATEM firmware update and nobody mi
 | other ATEMs | ❓ | ❓ |
 
 ### Software
-As mentioned, YeeCue is depended on <a href="https://clvlabs.github.io/PyATEMMax/">PyATEMMax</a>. In addition, it also uses <a href="https://yeelight.readthedocs.io/en/latest/"> Python YeeLight Library</a> (again, huge thanks to contributors). Both libraries could be installed by ``pip``.
+As mentioned, YeeCue is depended on <a href="https://clvlabs.github.io/PyATEMMax/">PyATEMMax</a>. In addition, it also uses <a href="https://yeelight.readthedocs.io/en/latest/"> Python YeeLight Library</a> (again, huge thanks to contributors). Both libraries could be installed using ``pip``.
 ```shell
 $ pip install yeelight
 $ pip install PyATEMMax
 ```
 
-
-## Installation
-
 ## Usage
+The script has to be running on a PC/macOS within the same network all the bulbs and the ATEM are connected into. 
+### 1. Bulb initialization
+The first task is to <i>activate</i> the bulbs. As far as I know, it <b>has to be done</b> via official Yeelight app. During the activation, the bulb has to send <i>some</i> data to the internet, therefore the LAN you are adding the bulb into, has to be able to connect to the internet. 
